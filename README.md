@@ -53,10 +53,6 @@ WEBSITE_PORTFOLIO/
 3. Select source branch (main)
 4. Your site will be live at `https://yourusername.github.io/portfolio/`
 
-### Other Platforms
-- **Netlify**: Connect GitHub repo, deploy automatically
-- **Vercel**: Import GitHub repo, deploy with one click
-- **Any Web Host**: Upload all files to public_html or www folder
 
 ## 📞 Contact
 
