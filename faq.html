@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Yash Biware | Professional Freelancer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --secondary: #06b6d4;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray-light: #94a3b8;
+            --gradient: linear-gradient(135deg, #7c3aed, #06b6d4);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--light); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        
+        /* Navbar */
+        .navbar { position: fixed; top: 0; left: 0; right: 0; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); z-index: 1000; padding: 1rem 0; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: var(--gray-light); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-menu { display: none; background: none; border: none; color: var(--light); font-size: 1.5rem; cursor: pointer; }
+        .nav-links.mobile-open { display: flex; position: absolute; top: 100%; left: 0; right: 0; background: rgba(15, 23, 42, 0.98); flex-direction: column; padding: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        
+        /* Content */
+        .main-content { padding: 120px 0 80px; min-height: calc(100vh - 200px); }
+        h1 { font-size: 2.5rem; margin-bottom: 2rem; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; text-align: center; }
+        .faq-item { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; margin-bottom: 1rem; overflow: hidden; }
+        .faq-question { padding: 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--primary); }
+        .faq-question:hover { background: rgba(255, 255, 255, 0.02); }
+        .faq-answer { padding: 0 1.5rem 1.5rem; color: var(--gray-light); display: none; }
+        .faq-answer.active { display: block; }
+        .faq-toggle { font-size: 1.2rem; transition: transform 0.3s ease; }
+        .faq-toggle.active { transform: rotate(45deg); }
+        
+        /* Footer */
+        .footer { background: rgba(15, 23, 42, 0.8); border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 3rem 0 2rem; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .footer-links a { color: var(--gray-light); text-decoration: none; transition: color 0.3s ease; }
+        .footer-links a:hover { color: var(--primary); }
+        .footer-text { color: var(--gray-light); font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu { display: block; }
+            .nav-links.mobile-open { display: flex; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="./index.html" class="logo" style="text-decoration: none;">Yash Biware</a>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./index.html#portfolio">Portfolio</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What services do you offer?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    I offer three core services: <strong>Website Development</strong> (responsive design, SEO optimization, ReactJS development), <strong>Content Writing</strong> (blog articles, SEO content, website copy), and <strong>Content Polishing</strong> (proofreading, tone adjustment, quality assurance). Each service is tailored to meet your specific business needs.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is your typical response time?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    I maintain professional response times of 2-4 hours via WhatsApp and 24 hours via email. For urgent project matters, WhatsApp is the fastest way to reach me. I believe in clear, consistent communication throughout every project.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do you price your services?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Pricing is project-specific and depends on scope, complexity, and timeline. I provide detailed quotes with transparent pricing - no hidden fees. Each quote includes project scope, deliverables, timeline, and payment terms. Contact me with your project details for a custom quote.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you offer revisions?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes! Every project includes two complimentary revision rounds. This ensures your complete satisfaction with the final deliverable. Additional revisions beyond the included rounds are available at a reasonable rate if needed.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is your typical project timeline?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Timelines vary by project scope: Simple websites (3-7 days), Complex websites (1-3 weeks), Content writing (2-5 days per 1000 words), Content polishing (1-3 days). I provide realistic timelines upfront and keep you updated on progress throughout the project.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you work with international clients?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Absolutely! I work with clients globally. Communication is primarily through WhatsApp and email, making it easy to collaborate across time zones. I'm flexible with meeting times and ensure smooth project coordination regardless of location.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What technologies do you use for web development?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    I specialize in modern web technologies: HTML5, CSS3 (Grid, Flexbox, Custom Properties), JavaScript (ES6+), ReactJS, responsive design frameworks, and SEO optimization tools. I stay updated with the latest web standards and best practices.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can you help with SEO optimization?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes! SEO optimization is integrated into both my web development and content writing services. This includes proper meta tags, structured data, fast loading speeds, mobile optimization, keyword-optimized content, and technical SEO best practices.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What makes you different from other freelancers?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    As a dedicated solo freelancer, you get direct access to me throughout your project - no middlemen or communication gaps. I focus on transparent pricing, reliable communication, quality deliverables, and building long-term partnerships. Your success is my success.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do I get started with a project?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Getting started is simple! Contact me via WhatsApp (+91 9399047713) or email (yashbiware@gmail.com) with your project details. I'll respond with questions to understand your needs, then provide a detailed quote and timeline. Once approved, we begin immediately.
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.05); border-radius: 1rem;">
+                <h2 style="color: var(--primary); margin-bottom: 1rem;">Still Have Questions?</h2>
+                <p style="color: var(--gray-light); margin-bottom: 1.5rem;">I'm here to help! Feel free to reach out with any questions about your project.</p>
+                <a href="./contact.html" style="display: inline-block; padding: 1rem 2rem; background: var(--gradient); color: white; text-decoration: none; border-radius: 50px; font-weight: 600;">Contact Me</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./index.html#services">Services</a>
+                <a href="./index.html#portfolio">Portfolio</a>
+                <a href="./about.html">About</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="footer-links" style="margin-top: 1rem; font-size: 0.9rem;">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+            </div>
+            <div class="footer-text">
+                <p style="margin-bottom: 0.5rem;">Solo Freelancer • Web Developer • Content Writer</p>
+                <p style="margin-bottom: 0.5rem;">© 2025 Yash Biware. All rights reserved.</p>
+                <p>Made with ❤️ in India • Bucksss</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('mobile-open');
+            this.textContent = navLinks.classList.contains('mobile-open') ? '✕' : '☰';
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.querySelector('.nav-links');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                navLinks.classList.remove('mobile-open');
+                mobileMenu.textContent = '☰';
+            });
+        });
+
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const toggle = this.querySelector('.faq-toggle');
+                
+                answer.classList.toggle('active');
+                toggle.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

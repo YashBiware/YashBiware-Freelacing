@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Process | Yash Biware - Professional Freelancer</title>
+    <meta name="description" content="Discover my proven freelancing process for web development and content writing projects. Clear steps, transparent communication, and guaranteed results.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --secondary: #06b6d4;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gray-light: #94a3b8;
+            --gradient: linear-gradient(135deg, #7c3aed, #06b6d4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--light); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--gray-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Process Steps */
+        .process-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .process-step {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 2rem;
+            background: var(--gradient);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .step-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--light);
+            margin-top: 1rem;
+        }
+
+        .step-description {
+            color: var(--gray-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .step-details {
+            list-style: none;
+        }
+
+        .step-details li {
+            padding: 0.5rem 0;
+            color: var(--gray-light);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .step-details li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* Timeline */
+        .timeline-section {
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .timeline-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .timeline-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .timeline-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-duration {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-desc {
+            color: var(--gray-light);
+            font-size: 0.9rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--light);
+        }
+
+        .cta-description {
+            color: var(--gray-light);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(15, 23, 42, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem 0 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--gray-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-text {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .nav-links.mobile-open {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(15, 23, 42, 0.98);
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .timeline-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="./index.html" class="logo">Yash Biware</a>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./index.html#portfolio">Portfolio</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./process.html" class="active">Process</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <h1 class="hero-title">My Proven Process</h1>
+                <p class="hero-subtitle">
+                    A transparent, step-by-step approach that ensures your project success from initial consultation to final delivery
+                </p>
+            </section>
+
+            <!-- Process Steps -->
+            <section class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Initial Consultation</h3>
+                    <p class="step-description">
+                        We start with a detailed discussion to understand your project requirements, goals, and vision.
+                    </p>
+                    <ul class="step-details">
+                        <li>Free 30-minute consultation call</li>
+                        <li>Project scope and requirements analysis</li>
+                        <li>Timeline and budget discussion</li>
+                        <li>Questions and clarifications</li>
+                        <li>Compatibility assessment</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Proposal & Agreement</h3>
+                    <p class="step-description">
+                        I provide a detailed proposal with clear deliverables, timeline, and transparent pricing.
+                    </p>
+                    <ul class="step-details">
+                        <li>Comprehensive project proposal</li>
+                        <li>Detailed scope of work</li>
+                        <li>Clear timeline with milestones</li>
+                        <li>Transparent pricing breakdown</li>
+                        <li>Terms and conditions agreement</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Research & Planning</h3>
+                    <p class="step-description">
+                        Deep dive into your industry, target audience, and competitors to create the best strategy.
+                    </p>
+                    <ul class="step-details">
+                        <li>Industry and competitor research</li>
+                        <li>Target audience analysis</li>
+                        <li>Content strategy development</li>
+                        <li>Technical requirements planning</li>
+                        <li>Project roadmap creation</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Development & Creation</h3>
+                    <p class="step-description">
+                        The actual work begins with regular updates and milestone check-ins to ensure we're on track.
+                    </p>
+                    <ul class="step-details">
+                        <li>Active development/writing phase</li>
+                        <li>Regular progress updates</li>
+                        <li>Milestone deliveries</li>
+                        <li>Quality assurance testing</li>
+                        <li>Client feedback incorporation</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Review & Refinement</h3>
+                    <p class="step-description">
+                        Collaborative review process with up to 2 revision rounds to ensure everything meets your expectations.
+                    </p>
+                    <ul class="step-details">
+                        <li>Initial draft/version presentation</li>
+                        <li>Client feedback collection</li>
+                        <li>First revision round</li>
+                        <li>Second revision round (if needed)</li>
+                        <li>Final approval process</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title">Delivery & Support</h3>
+                    <p class="step-description">
+                        Final delivery with documentation, training, and ongoing support to ensure your success.
+                    </p>
+                    <ul class="step-details">
+                        <li>Final project delivery</li>
+                        <li>Complete documentation</li>
+                        <li>Training and handover</li>
+                        <li>30-day post-delivery support</li>
+                        <li>Future collaboration discussion</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Timeline Section -->
+            <section class="timeline-section">
+                <h2 class="timeline-title">Typical Project Timeline</h2>
+                <p style="color: var(--gray-light); margin-bottom: 2rem;">
+                    Every project is unique, but here's what you can typically expect:
+                </p>
+                
+                <div class="timeline-grid">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">📋</div>
+                        <div class="timeline-duration">Day 1-2</div>
+                        <div class="timeline-desc">Consultation & Proposal</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🔍</div>
+                        <div class="timeline-duration">Day 3-5</div>
+                        <div class="timeline-desc">Research & Planning</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">⚡</div>
+                        <div class="timeline-duration">Week 1-2</div>
+                        <div class="timeline-desc">Active Development</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🔄</div>
+                        <div class="timeline-duration">Week 2-3</div>
+                        <div class="timeline-desc">Review & Revisions</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🚀</div>
+                        <div class="timeline-duration">Week 3</div>
+                        <div class="timeline-desc">Final Delivery</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Communication Section -->
+            <section class="process-step" style="margin: 3rem 0;">
+                <h3 class="step-title" style="margin-top: 0;">Communication & Updates</h3>
+                <p class="step-description">
+                    Transparent communication is key to project success. Here's how we stay connected:
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">📱</div>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">WhatsApp</h4>
+                        <p style="color: var(--gray-light); font-size: 0.9rem;">Quick updates and questions<br>Response: 2-4 hours</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">📧</div>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Email</h4>
+                        <p style="color: var(--gray-light); font-size: 0.9rem;">Detailed updates and deliveries<br>Response: Within 24 hours</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">📊</div>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Progress Reports</h4>
+                        <p style="color: var(--gray-light); font-size: 0.9rem;">Weekly milestone updates<br>Every Friday</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-description">
+                    Let's discuss your project requirements and see how my proven process can bring your vision to life.
+                </p>
+                <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27ve%20reviewed%20your%20process%20and%20I%27m%20interested%20in%20starting%20a%20project.%20I%27d%20like%20to%20schedule%20a%20free%20consultation%20to%20discuss%20my%20requirements.%0A%0A*Project%20Type:*%20[Website%20Development%20/%20Content%20Writing%20/%20Content%20Polishing]%0A%0A*Brief%20Description:*%20[Tell%20me%20about%20your%20project]%0A%0A*Timeline:*%20[When%20do%20you%20need%20this%20completed?]%0A%0APlease%20let%20me%20know%20your%20availability%20for%20a%20consultation%20call.%20Thank%20you!" class="btn">Start Free Consultation</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./index.html#services">Services</a>
+                <a href="./index.html#portfolio">Portfolio</a>
+                <a href="./about.html">About</a>
+                <a href="./process.html">Process</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="footer-links" style="margin-top: 1rem; font-size: 0.9rem;">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+            </div>
+            <div class="footer-text">
+                <p style="margin-bottom: 0.5rem;">Solo Freelancer • Web Developer • Content Writer</p>
+                <p style="margin-bottom: 0.5rem;">© 2025 Yash Biware. All rights reserved.</p>
+                <p>Made with ❤️ in India • Bucksss</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('mobile-open');
+            this.textContent = navLinks.classList.contains('mobile-open') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.querySelector('.nav-links');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                navLinks.classList.remove('mobile-open');
+                mobileMenu.textContent = '☰';
+            });
+        });
+    </script>
+</body>
+</html>

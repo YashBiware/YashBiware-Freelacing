@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Yash Biware</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --secondary: #06b6d4;
+            --success: #10b981;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray-light: #94a3b8;
+            --gradient: linear-gradient(135deg, #7c3aed, #06b6d4);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--light); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+        
+        .navbar { position: fixed; top: 0; left: 0; right: 0; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); z-index: 1000; padding: 1rem 0; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        .logo { font-size: 1.5rem; font-weight: 700; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: var(--gray-light); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--primary); }
+        .mobile-menu { display: none; background: none; border: none; color: var(--light); font-size: 1.5rem; cursor: pointer; }
+        .nav-links.mobile-open { display: flex; position: absolute; top: 100%; left: 0; right: 0; background: rgba(15, 23, 42, 0.98); flex-direction: column; padding: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        
+        .main-content { padding: 120px 0 80px; min-height: calc(100vh - 200px); }
+        
+        .hero-section { text-align: center; margin-bottom: 4rem; }
+        .hero-title { font-size: 3.5rem; font-weight: 900; margin-bottom: 1rem; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 0 40px rgba(124, 58, 237, 0.4); letter-spacing: -0.03em; line-height: 1.1; }
+        .hero-subtitle { font-size: 1.2rem; color: var(--gray-light); margin-bottom: 1rem; }
+        .last-updated { background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 50px; padding: 0.5rem 1rem; display: inline-block; font-size: 0.9rem; color: var(--success); }
+        
+        .content-section { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; padding: 2.5rem; margin-bottom: 2rem; transition: all 0.3s ease; }
+        .content-section:hover { transform: translateY(-2px); border-color: rgba(124, 58, 237, 0.3); }
+        
+        .section-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .section-title { font-size: 1.8rem; font-weight: 700; color: var(--light); margin-bottom: 1.5rem; text-shadow: 0 2px 8px rgba(124, 58, 237, 0.2); }
+        .section-content { color: var(--gray-light); font-size: 1.1rem; line-height: 1.8; }
+        
+        .contact-section { background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 1rem; padding: 2rem; text-align: center; margin-top: 3rem; }
+        .contact-title { color: var(--secondary); font-size: 1.5rem; margin-bottom: 1rem; }
+        .contact-link { color: var(--secondary); text-decoration: none; font-weight: 600; }
+        .contact-link:hover { text-decoration: underline; }
+        
+        .footer { background: rgba(15, 23, 42, 0.8); border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 3rem 0 2rem; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .footer-links a { color: var(--gray-light); text-decoration: none; transition: color 0.3s ease; }
+        .footer-links a:hover { color: var(--primary); }
+        .footer-text { color: var(--gray-light); font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu { display: block; }
+            .nav-links.mobile-open { display: flex; }
+            .hero-title { font-size: 2.5rem; }
+            .content-section { padding: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="./index.html" class="logo" style="text-decoration: none;">Yash Biware</a>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./index.html#portfolio">Portfolio</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="hero-section">
+                <h1 class="hero-title">Terms of Service</h1>
+                <p class="hero-subtitle">Clear terms for professional collaboration and mutual success</p>
+                <div class="last-updated">Last updated: January 2025</div>
+            </div>
+            
+            <div class="content-section">
+                <div class="section-icon">💼</div>
+                <h2 class="section-title">Professional Services</h2>
+                <div class="section-content">
+                    <p>I provide high-quality freelance services including:</p>
+                    <br>
+                    <p>• <strong>Web Development:</strong> Responsive websites, custom applications, and technical solutions<br>
+                    • <strong>Content Writing:</strong> SEO-optimized articles, website copy, and marketing content<br>
+                    • <strong>Content Polishing:</strong> Professional editing, proofreading, and quality enhancement</p>
+                    <br>
+                    <p>All work is performed with attention to quality, deadlines, and client satisfaction.</p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="section-icon">💳</div>
+                <h2 class="section-title">Payment Terms</h2>
+                <div class="section-content">
+                    <p>Clear and fair payment structure:</p>
+                    <br>
+                    <p>• <strong>Project Payment:</strong> 50% advance payment required to start, 50% due upon completion<br>
+                    • <strong>Payment Methods:</strong> Bank transfer, UPI, or other agreed methods<br>
+                    • <strong>Currency:</strong> All prices quoted in Indian Rupees (INR)<br>
+                    • <strong>Late Payments:</strong> May result in project suspension until payment is received</p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="section-icon">🔄</div>
+                <h2 class="section-title">Revisions & Changes</h2>
+                <div class="section-content">
+                    <p>Ensuring your complete satisfaction:</p>
+                    <br>
+                    <p>• <strong>Included Revisions:</strong> Two complimentary revision rounds with every project<br>
+                    • <strong>Additional Revisions:</strong> Available at reasonable rates<br>
+                    • <strong>Scope Changes:</strong> Major changes to project scope may require additional payment<br>
+                    • <strong>Timeline:</strong> Revisions must be requested within 30 days of delivery</p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="section-icon">📄</div>
+                <h2 class="section-title">Intellectual Property</h2>
+                <div class="section-content">
+                    <p>Clear ownership and usage rights:</p>
+                    <br>
+                    <p>• <strong>Client Ownership:</strong> Upon full payment, you receive complete ownership of the delivered work<br>
+                    • <strong>Portfolio Rights:</strong> I retain the right to showcase completed projects in my portfolio<br>
+                    • <strong>Confidentiality:</strong> All client information and project details are kept confidential<br>
+                    • <strong>Third-party Content:</strong> Client is responsible for providing properly licensed content</p>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="section-icon">⚖️</div>
+                <h2 class="section-title">Limitation of Liability</h2>
+                <div class="section-content">
+                    <p>Professional responsibility and limitations:</p>
+                    <br>
+                    <p>• <strong>Service Liability:</strong> Limited to the total amount paid for the specific project<br>
+                    • <strong>Indirect Damages:</strong> Not responsible for indirect, incidental, or consequential damages<br>
+                    • <strong>Third-party Services:</strong> Not liable for issues with external services or platforms<br>
+                    • <strong>Force Majeure:</strong> Not liable for delays due to circumstances beyond reasonable control</p>
+                </div>
+            </div>
+            
+            <div class="contact-section">
+                <h3 class="contact-title">Questions About Terms?</h3>
+                <p style="color: var(--gray-light); margin-bottom: 1rem;">For clarification on any terms or to discuss your specific project requirements.</p>
+                <a href="mailto:yashbiware@gmail.com?subject=Terms%20of%20Service%20Question" class="contact-link">yashbiware@gmail.com</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./index.html#services">Services</a>
+                <a href="./index.html#portfolio">Portfolio</a>
+                <a href="./about.html">About</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="footer-links" style="margin-top: 1rem; font-size: 0.9rem;">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+            </div>
+            <div class="footer-text">
+                <p style="margin-bottom: 0.5rem;">Solo Freelancer • Web Developer • Content Writer</p>
+                <p style="margin-bottom: 0.5rem;">© 2025 Yash Biware. All rights reserved.</p>
+                <p>Made with ❤️ in India • Bucksss</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('mobile-open');
+            this.textContent = navLinks.classList.contains('mobile-open') ? '✕' : '☰';
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.querySelector('.nav-links');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                navLinks.classList.remove('mobile-open');
+                mobileMenu.textContent = '☰';
+            });
+        });
+    </script>
+</body>
+</html>

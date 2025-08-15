@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Web Development & Content Writing Pricing | Yash Biware</title>
+    <meta name="description" content="Transparent pricing for professional web development (₹3,000-₹15,000) and content writing services (₹250-₹1,000). Student discounts available. Get instant quotes.">
+    <meta name="keywords" content="web development pricing, website cost India, content writing rates, freelance web developer, affordable website packages, SEO content writing">
+    <meta name="author" content="Yash Biware">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yashbiware.github.io/portfolio/WEBSITE_PORTFOLIO/pricing.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Affordable Web Development & Content Writing Pricing | Yash Biware">
+    <meta property="og:description" content="Professional web development starting at ₹3,000 and content writing from ₹250. Transparent pricing with no hidden fees.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yashbiware.github.io/portfolio/WEBSITE_PORTFOLIO/pricing.html">
+    <meta property="og:image" content="https://yashbiware.github.io/portfolio/WEBSITE_PORTFOLIO/yash_img.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Affordable Web Development & Content Writing Pricing">
+    <meta name="twitter:description" content="Professional web development starting at ₹3,000 and content writing from ₹250. Get instant quotes.">
+    <meta name="twitter:image" content="https://yashbiware.github.io/portfolio/WEBSITE_PORTFOLIO/yash_img.jpg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --secondary: #06b6d4;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gray-light: #94a3b8;
+            --gradient: linear-gradient(135deg, #7c3aed, #06b6d4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--light); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--gray-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Main Content */
+        main {
+            padding: 120px 0 60px;
+            min-height: 100vh;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 5rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 40px rgba(124, 58, 237, 0.4);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Service Categories */
+        .service-category {
+            margin-bottom: 8rem;
+        }
+
+        .category-title {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: var(--light);
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
+            letter-spacing: -0.02em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .category-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .package-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
+        }
+
+        .package-card.featured {
+            border-color: var(--primary);
+            background: rgba(124, 58, 237, 0.1);
+        }
+
+        .package-card.special {
+            border-color: var(--accent);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .popular-badge, .special-badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .special-badge {
+            background: var(--accent);
+        }
+
+        .package-name {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            color: var(--light);
+            text-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
+        }
+
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .package-duration {
+            color: var(--gray-light);
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .package-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .package-features li {
+            padding: 0.5rem 0;
+            color: var(--gray-light);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .package-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            justify-content: center;
+            margin-top: auto;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+        }
+
+        /* Two-column layout for smaller sections */
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Custom Pricing */
+        .custom-section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .custom-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--light);
+        }
+
+        .custom-description {
+            color: var(--gray-light);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin: 4rem 0;
+        }
+
+        .faq-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .faq-grid {
+            display: grid;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--light);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-answer {
+            color: var(--gray-light);
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(15, 23, 42, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem 0 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--gray-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-text {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Pulse animation for Academic Rush */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            main {
+                padding: 100px 0 40px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .nav-links.mobile-open {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(15, 23, 42, 0.98);
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-section {
+                padding: 2rem 0;
+                margin-bottom: 3rem;
+            }
+
+            .service-category {
+                margin-bottom: 4rem;
+            }
+
+            .category-title {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+
+            .packages-grid, .two-column {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .package-card {
+                padding: 1.5rem;
+            }
+
+            .custom-section {
+                margin: 3rem 0;
+                padding: 2rem 1.5rem;
+            }
+
+            .faq-section {
+                margin: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="./index.html" class="logo">Yash Biware</a>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./pricing.html" class="active">Pricing</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./process.html">Process</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <h1 class="hero-title">Pricing That Works for You</h1>
+                <p class="hero-subtitle">
+                    Professional web development starting at ₹3,000 and content writing from ₹250. Choose the perfect package for your project with no hidden fees.
+                </p>
+            </section>
+
+            <!-- Website Development Packages -->
+            <section class="service-category">
+                <h2 class="category-title">🌐 Website Development</h2>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <h3 class="package-name">Starter Website</h3>
+                        <div class="package-price">₹3,000</div>
+                        <div class="package-duration">Perfect for small businesses</div>
+                        <ul class="package-features">
+                            <li>Up to 5 pages</li>
+                            <li>Mobile-friendly responsive design</li>
+                            <li>Basic SEO setup</li>
+                            <li>Social media links integration</li>
+                            <li>WhatsApp chat button integration</li>
+                            <li>2 weeks delivery</li>
+                            <li>2 revision rounds</li>
+                        </ul>
+                        <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27m%20interested%20in%20the%20*Starter%20Website*%20(₹3,000).%0A%0A*My%20Details:*%0AName:%20%0ACompany/Business:%20%0APhone:%20%0A%0A*Project%20Requirements:*%0APages%20needed:%20%0ABusiness%20type:%20%0AContent%20ready:%20Yes/No%0ATimeline:%20%0ADomain%20name:%20%0ASpecial%20requests:%20" class="btn">Order Now</a>
+                    </div>
+
+                    <div class="package-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <h3 class="package-name">Professional Website</h3>
+                        <div class="package-price">₹8,000</div>
+                        <div class="package-duration">For growing businesses</div>
+                        <ul class="package-features">
+                            <li>Up to 10 pages</li>
+                            <li>Advanced responsive design with improved visuals</li>
+                            <li>Complete on-page SEO optimization</li>
+                            <li>Social media integration </li>
+                            <li>Blog or news section</li>
+                            <li>Performance optimization (faster load speed, image compression)</li>
+                            <li>WhatsApp chat button with pre-filled template</li>
+                            <li>3 weeks delivery</li>
+                            <li>2 revision rounds</li>
+                        </ul>
+                        <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27m%20interested%20in%20the%20*Professional%20Website*%20(₹8,000).%0A%0A*My%20Details:*%0AName:%20%0ACompany/Business:%20%0APhone:%20%0A%0A*Project%20Requirements:*%0APages%20needed:%20%0ABusiness%20type:%20%0AContent%20ready:%20Yes/No%0ABlog%20topics:%20%0ATimeline:%20%0ADomain%20name:%20%0ASpecial%20features:%20" class="btn">Order Now</a>
+                    </div>
+
+                    <div class="package-card">
+                        <h3 class="package-name">Premium Website</h3>
+                        <div class="package-price">₹15,000</div>
+                        <div class="package-duration">For established businesses</div>
+                        <ul class="package-features">
+                            <li>Unlimited pages</li>
+                            <li>Custom layouts & animations</li>
+                            <li>Advanced SEO & speed optimization</li>
+                            <li>Social media integration with share buttons</li>
+                            <li>Interactive image galleries & sliders</li>
+                            <li>Multiple language versions (up to 3)</li>
+                            <li>Video embedding</li>
+                            <li>Advanced WhatsApp integration (floating chat widget, multiple agents)</li>
+                            <li>4 weeks delivery</li>
+                            <li>3 revision rounds</li>
+                        </ul>
+                        <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27m%20interested%20in%20the%20*Premium%20Website*%20(₹15,000).%0A%0A*My%20Details:*%0AName:%20%0ACompany/Business:%20%0APhone:%20%0A%0A*Project%20Requirements:*%0APages%20needed:%20%0ABusiness%20type:%20%0AContent%20ready:%20Yes/No%0ALanguages%20needed:%20%0AAnimations%20required:%20%0ATimeline:%20%0ADomain%20name:%20%0ASpecial%20features:%20" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Special Services -->
+            <section class="service-category">
+                <h2 class="category-title">⭐ Special Services</h2>
+                <div class="two-column">
+                    <div class="package-card special">
+                        <div class="special-badge">Student Only</div>
+                        <h3 class="package-name">Academic Rush</h3>
+                        <div class="package-price">₹3,000</div>
+                        <div class="package-duration" style="background: linear-gradient(45deg, #ff6b6b, #ffa500); color: white; padding: 0.5rem 1rem; border-radius: 25px; font-weight: 700; font-size: 1rem; margin: 1rem 0; display: inline-block; box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3); animation: pulse 2s infinite;">⚡ SUPER FAST: 2-3 DAYS ⚡</div>
+                        <ul class="package-features">
+                            <li>4 pages website</li>
+                            <li>Simple design</li>
+                            <li>Basic features</li>
+                            <li>Student ID required</li>
+                            <li>Fast delivery</li>
+                        </ul>
+                        <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27m%20a%20student%20interested%20in%20*Academic%20Rush*%20(₹3,000).%0A%0A*My%20Details:*%0AName:%20%0ACollege/University:%20%0ACourse:%20%0APhone:%20%0A%0A*Project%20Requirements:*%0AProject%20purpose:%20%0APages%20needed:%20%0ASubmission%20deadline:%20%0AContent%20ready:%20Yes/No%0AStudent%20ID%20available:%20Yes/No" class="btn">Order Now</a>
+                    </div>
+
+                    <div class="package-card">
+                        <h3 class="package-name">Website Clone</h3>
+                        <div class="package-price">₹2,000</div>
+                        <div class="package-duration">5-8 days</div>
+                        <ul class="package-features">
+                            <li>Copy existing design</li>
+                            <li>Your content</li>
+                            <li>Responsive layout</li>
+                            <li>SEO optimized</li>
+                            <li>Custom branding</li>
+                        </ul>
+                        <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27m%20interested%20in%20*Website%20Clone*%20(₹2,000).%0A%0A*My%20Details:*%0AName:%20%0ACompany/Business:%20%0APhone:%20%0A%0A*Project%20Requirements:*%0AWebsite%20to%20clone:%20%0AYour%20content%20ready:%20Yes/No%0ABranding%20changes:%20%0ATimeline:%20%0ADomain%20name:%20" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Writing & Polishing Packages -->
+            <section class="service-category">
+                <h2 class="category-title">✍️ Content Writing & Polishing</h2>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <h3 class="package-name">Starter Content Package</h3>
+                        <div class="package-price">₹250</div>
+                        <div class="package-duration">Perfect for quick, single needs</div>
+                        <ul class="package-features">
+                            <li>1 blog/article (500–600 words)</li>
+                            <li>SEO optimized with basic keyword inclusion</li>
+                            <li>Research included</li>
+                            <li>Social media ready format</li>
+                            <li>Grammar correction & readability boost</li>
+                            <li>1 revision</li>
+                            <li>2–3 days delivery</li>
+                        </ul>
+                        <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27m%20interested%20in%20the%20*Starter%20Content%20Package*%20(₹250).%0A%0A*My%20Details:*%0AName:%20%0ACompany/Business:%20%0APhone:%20%0A%0A*Content%20Requirements:*%0ATopic:%20%0ATarget%20audience:%20%0AKeywords:%20%0ATone:%20Professional/Casual%0ATimeline:%20" class="btn">Order Now</a>
+                    </div>
+
+                    <div class="package-card featured">
+                        <div class="popular-badge">Best Value</div>
+                        <h3 class="package-name">Growth Content Bundle</h3>
+                        <div class="package-price">₹1,000</div>
+                        <div class="package-duration">For regular content needs</div>
+                        <ul class="package-features">
+                            <li>5 blogs/articles (500–600 words each)</li>
+                            <li>SEO optimized + keyword research</li>
+                            <li>Research included for each article</li>
+                            <li>Social media ready format</li>
+                            <li>Grammar correction & tone adjustment</li>
+                            <li>2 revisions per article</li>
+                            <li>1-week delivery</li>
+                            <li>Content calendar included</li>
+                        </ul>
+                        <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27m%20interested%20in%20the%20*Growth%20Content%20Bundle*%20(₹1,000).%0A%0A*My%20Details:*%0AName:%20%0ACompany/Business:%20%0APhone:%20%0A%0A*Content%20Requirements:*%0A5%20Topics:%20%0ATarget%20audience:%20%0AKeywords:%20%0ATone:%20Professional/Casual%0AIndustry:%20%0ATimeline:%20" class="btn">Order Now</a>
+                    </div>
+
+                    <div class="package-card">
+                        <h3 class="package-name">Premium Content Polish</h3>
+                        <div class="package-price">₹500</div>
+                        <div class="package-duration">Per 1000 words</div>
+                        <ul class="package-features">
+                            <li>Complete grammar correction & style improvement</li>
+                            <li>Tone adjustment for target audience</li>
+                            <li>Structure optimization for better flow</li>
+                            <li>Readability enhancement for engagement</li>
+                            <li>SEO review & improvement</li>
+                            <li>2 days delivery (24 hours for urgent requests)</li>
+                        </ul>
+                        <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%27m%20interested%20in%20the%20*Premium%20Content%20Polish*%20(₹500%20per%201000%20words).%0A%0A*My%20Details:*%0AName:%20%0ACompany/Business:%20%0APhone:%20%0A%0A*Content%20Details:*%0AWord%20count:%20%0AContent%20type:%20%0ATarget%20audience:%20%0ADesired%20tone:%20%0AUrgent:%20Yes/No%0ATimeline:%20%0A%0A*Please%20attach%20your%20content%20file*" class="btn">Get Quote</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Custom Pricing -->
+            <section class="custom-section">
+                <h2 class="custom-title">Need Something Custom?</h2>
+                <p class="custom-description">
+                    Every project is unique. If none of the packages fit your specific needs, let's discuss a custom solution tailored just for you.
+                </p>
+                <a href="https://wa.me/919399047713?text=Hi%20Yash!%20I%20need%20a%20custom%20solution%20for%20my%20project.%0A%0A*My%20Details:*%0AName:%20%0ACompany/Business:%20%0APhone:%20%0A%0A*Project%20Details:*%0AProject%20type:%20%0ARequirements:%20%0ABudget%20range:%20%0ATimeline:%20%0ASpecial%20needs:%20" class="btn">Get Custom Quote</a>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2 class="faq-title">Pricing FAQ</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">What's included in the pricing?</div>
+                        <div class="faq-answer">All prices include the specified deliverables, revisions, and basic support. No hidden fees.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How do payments work?</div>
+                        <div class="faq-answer">50% upfront to start, 50% on completion. Secure payment methods accepted.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What if I need more revisions?</div>
+                        <div class="faq-answer">Additional revisions beyond the package limit are ₹500 per round for websites, ₹100 for content.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I upgrade my package later?</div>
+                        <div class="faq-answer">Yes! You can upgrade during the project by paying the difference.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Do you offer discounts for bulk orders?</div>
+                        <div class="faq-answer">Yes, contact me for custom pricing on large projects or ongoing work.</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./index.html#services">Services</a>
+                <a href="./pricing.html">Pricing</a>
+                <a href="./about.html">About</a>
+                <a href="./process.html">Process</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="footer-links" style="margin-top: 1rem; font-size: 0.9rem;">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+            </div>
+            <div class="footer-text">
+                <p style="margin-bottom: 0.5rem;">Solo Freelancer • Web Developer • Content Writer</p>
+                <p style="margin-bottom: 0.5rem;">© 2025 Yash Biware. All rights reserved.</p>
+                <p>Made with ❤️ in India • Bucksss</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('mobile-open');
+            this.textContent = navLinks.classList.contains('mobile-open') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.querySelector('.nav-links');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                navLinks.classList.remove('mobile-open');
+                mobileMenu.textContent = '☰';
+            });
+        });
+    </script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Web Development & Content Writing Services",
+        "description": "Professional web development and content writing services with transparent pricing",
+        "provider": {
+            "@type": "Person",
+            "name": "Yash Biware",
+            "url": "https://yashbiware.github.io/portfolio/WEBSITE_PORTFOLIO/",
+            "telephone": "+91-9399047713",
+            "email": "yashbiware@gmail.com"
+        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Starter Website",
+                "description": "5-page responsive website with SEO",
+                "price": "3000",
+                "priceCurrency": "INR"
+            },
+            {
+                "@type": "Offer",
+                "name": "Professional Website",
+                "description": "10-page website with advanced features",
+                "price": "8000",
+                "priceCurrency": "INR"
+            },
+            {
+                "@type": "Offer",
+                "name": "Premium Website",
+                "description": "Unlimited pages with custom animations",
+                "price": "15000",
+                "priceCurrency": "INR"
+            },
+            {
+                "@type": "Offer",
+                "name": "Content Writing",
+                "description": "SEO-optimized blog articles and website content",
+                "price": "250",
+                "priceCurrency": "INR"
+            }
+        ],
+        "areaServed": "India",
+        "availableLanguage": "English"
+    }
+    </script>
+</body>
+</html>
