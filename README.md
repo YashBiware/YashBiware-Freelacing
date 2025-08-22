@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing professional freelance web dev
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://yashbiware.github.io/portfolio/)
+[View Live Portfolio](https://yashbiware.github.io/YashBiware-Freelacing/index.html)
 
 ## 📋 Features
 
