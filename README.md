@@ -51,7 +51,7 @@ WEBSITE_PORTFOLIO/
 1. Fork or clone this repository
 2. Go to Settings > Pages
 3. Select source branch (main)
-4. Your site will be live at `https://yourusername.github.io/portfolio/`
+4. MY site is live at `https://yashbiware.github.io/YashBiware-Freelacing/index.html`
 
 
 ## 📞 Contact
